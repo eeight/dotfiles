@@ -1,0 +1,13 @@
+startup_message off
+vbell off
+defscrollback 5000
+hardstatus alwayslastline
+hardstatus string '%{= kG}%-Lw%{= kW}%50> %n*%f %t%{= kG}%+Lw%< %{= kG}%-=%D %m/%d/%y | %C:%s %A | %1`%{-}'
+
+screen    -t $         1
+select 0
+
+bindkey "^[[1;3D" prev  # change window with alt-left
+bindkey "^[[1;3C" next  # change window with alt-right
+bindkey "OQ" prev     # change window with F2
+bindkey "OR" next     # change window with F3

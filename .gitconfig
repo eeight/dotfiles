@@ -1,0 +1,15 @@
+[user]
+	email = eeight@yandex-team.ru
+	name = Petr Prokhorenkov
+[diff]
+	color = on
+[status]
+	color = on
+	relativePaths = true
+[branch]
+	color = on
+[color]
+	branch = auto
+[rebase]
+	stat = true
+[merge]
