@@ -91,6 +91,10 @@ alias dupload='dupload --nomail'
 alias fixme='fgrep FIXME -rn .'
 alias todo='fgrep TODO -rn .'
 
+alias tt='tmux attach || tmux new'
+
+alias update-dotfiles='cd ~/.dotfiles && git pull'
+
 export LC_ALL=en_US.utf8
 export LC_LANG=en_US.utf8
 export LC_COLLATE=C
