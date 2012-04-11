@@ -94,7 +94,7 @@ alias todo='fgrep TODO -rn .'
 
 alias tt='tmux attach || tmux new'
 
-alias update-dotfiles='cd ~/.dotfiles && git pull'
+alias update-dotfiles='pushd ~/.dotfiles; git pull; popd'
 
 export LC_ALL=en_US.utf8
 export LC_LANG=en_US.utf8
