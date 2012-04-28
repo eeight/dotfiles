@@ -35,7 +35,7 @@ alias ls='ls --color=auto'
 alias l=ls
 alias grep='grep --colour=auto'
 
-alias gd='git-diff'
+alias gd='git-diff -C'
 alias gds='git-diff --stat'
 alias gi='git-commit'
 alias gfix='git-commit --amend -C HEAD'
