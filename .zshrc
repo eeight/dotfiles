@@ -84,6 +84,7 @@ alias map="xargs -n1"
 alias build="debuild --no-tgz-check --no-lintian -j8 && debuild clean"
 alias dbc="debuild clean"
 alias vless="/usr/share/vim/vim72/macros/less.sh"
+alias vmtouch='vmtouch -v -m 1000G'
 
 alias deb="make deb && make distclean"
 
