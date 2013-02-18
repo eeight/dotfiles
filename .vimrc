@@ -24,7 +24,7 @@ set smartcase
 
 set autoindent
 set scrolloff=3
-set number
+set nonumber
 set nowrap
 
 set softtabstop=4
@@ -35,13 +35,13 @@ set expandtab
 set foldmethod=syntax
 set foldlevel=25
 
-syntax enable
 set background=light
 
 vnoremap < <gv
 vnoremap > >gv
 
 set showmatch
+set wrapscan
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
@@ -49,7 +49,7 @@ set showmatch
 " Interface
 set backspace=2
 set termencoding=utf-8
-syntax on
+syntax off
 set ruler
 
 " Show things that are normally not visible

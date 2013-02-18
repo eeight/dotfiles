@@ -15,8 +15,7 @@
 # Prints a representation of the object to stderr, along with the
 # number of reference counts it current has and the hex address the
 # object is allocated at.  The argument must be a PyObject*
-define pyo
-print _PyObject_Dump($arg0)
+define pyo print _PyObject_Dump($arg0)
 end
 
 # Prints a representation of the object to stderr, along with the

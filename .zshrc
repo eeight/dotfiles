@@ -28,6 +28,8 @@ source $ZSH/oh-my-zsh.sh
 
 unsetopt correct_all
 
+bindkey "^X^E" edit-command-line
+
 # Customize to your needs...
 export PATH=$PATH:`git --exec-path`:/home/eeight/bin
 
