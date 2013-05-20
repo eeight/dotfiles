@@ -93,8 +93,8 @@ alias deb="make deb && make distclean"
 alias dch='dch -D unstable --force-distribution --distributor yandex'
 alias dupload='dupload --nomail'
 
-alias fixme='fgrep FIXME -rn .'
-alias todo='fgrep TODO -rn .'
+alias fixme='fgrep FIXME -rnI .'
+alias todo='fgrep TODO -rnI .'
 
 alias tt='tmux attach || tmux new'
 
