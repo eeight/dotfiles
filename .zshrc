@@ -22,7 +22,7 @@ ZSH_THEME="jreese"
 # Uncomment following line if you want red dots to be displayed while waiting for completion
 COMPLETION_WAITING_DOTS="true"
 
-plugins=(git gpg-agent)
+plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -81,7 +81,7 @@ alias e='vim'
 alias :e='vim'
 alias make="make -j24"
 alias m='make'
-alias ssh="ssh -Y"
+alias ssh="ssh -YA"
 alias map="xargs -n1"
 alias build="debuild --no-tgz-check --no-lintian -j8 && debuild clean"
 alias dbc="debuild clean"
