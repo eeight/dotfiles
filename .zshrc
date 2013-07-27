@@ -33,6 +33,32 @@ bindkey "^X^E" edit-command-line
 # Customize to your needs...
 export PATH=$PATH:`git --exec-path`:/home/eeight/bin
 
+## Enable gpg agent
+GPG_ENV=$HOME/.gnupg/gpg-agent.env
+
+function try_gpg_agent {
+    gpg-connect-agent --quiet /bye > /dev/null 2> /dev/null
+}
+
+# check if another agent is running
+if ! try_gpg_agent; then
+    # source settings of old agent, if applicable
+    if [ -f "${GPG_ENV}" ]; then
+        . ${GPG_ENV} > /dev/null
+    fi
+
+    # check again if another agent is running using the newly sourced settings
+    if ! try_gpg_agent; then
+        eval $(/usr/bin/env gpg-agent --quiet --daemon --write-env-file ${GPG_ENV} 2> /dev/null)
+        chmod 600 ${GPG_ENV}
+        export GPG_AGENT_INFO
+    fi
+fi
+
+GPG_TTY=$(tty)
+export GPG_TTY
+## /Enable gpg agent
+
 alias ls='ls --color=auto'
 alias l=ls
 alias grep='grep --colour=auto'

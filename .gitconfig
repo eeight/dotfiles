@@ -3,6 +3,7 @@
 	name = Petr Prokhorenkov
 [diff]
 	color = on
+	algorithm = patience
 [status]
 	color = on
 	relativePaths = true
